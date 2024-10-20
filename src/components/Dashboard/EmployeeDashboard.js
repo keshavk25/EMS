@@ -1,0 +1,19 @@
+import React from 'react';
+import Header from '../other/Header';
+import TaskListNumber from '../other/TaskListNumber';
+import TaskList from '../taskLists/TaskList';
+
+const EmployeeDashboard = ({data}) => {
+  console.log(data);
+  
+  return (
+    <div className='bg-[#1c1c1c]'>
+    
+       <Header data={data}/>
+       <TaskListNumber data={data}/>
+       <TaskList data={data}/>
+    </div>
+  )
+}
+
+export default EmployeeDashboard
